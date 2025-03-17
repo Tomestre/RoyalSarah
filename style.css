@@ -50,7 +50,7 @@ menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100%;
     background-image: url('./imgs/headline.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
@@ -66,6 +66,7 @@ menu {
     backdrop-filter: blur(5px); /* Efeito de blur */
     -webkit-backdrop-filter: blur(5px); /* Compatibilidade com Safari */
     padding: 10px 20px;
+    margin: 100px 0 0 0
 }
 .glass h1 {
     margin-bottom: 10px;
@@ -258,7 +259,7 @@ a {
     background-size: cover;
     background-position:0%;
     background-attachment: fixed;
-    background-position: center 300px;
+    background-position: center 100px;
     padding: 40px;
 }
 
