@@ -246,6 +246,15 @@ a {
     z-index: 0;
 }
 
+ .content{
+    max-width: 700px !important;
+}
+section{
+display: flex;
+align-items: center;
+flex-direction: column;
+overflow: hidden;
+}
 /* Fallback para Safari ou navegadores sem suporte a background-attachment: fixed */
 @supports not (background-attachment: fixed) {
     .section4 {
