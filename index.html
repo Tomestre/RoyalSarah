@@ -41,6 +41,25 @@
         gtag("set", "url_passthrough", false);
     </script>
     
+    <!-- Event snippet for Clique de saída conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17003951623/0SkXCILV8rcaEIfsjqw_',
+            'value': 1.0,
+            'currency': 'EUR',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+    
 </head>
 
 <!-- Google tag AW-16462955375 (gtag.js) -->
@@ -87,7 +106,7 @@
                     <div class="line"></div>
                     <h2>Obtenha seu NIF, NISS, CPLP e mais com suporte especializado para imigrantes como você.</h2>
                 </div>
-                <a href="http://wa.me/351911545582">
+                <a href="http://wa.me/351911545582" onclick="return gtag_report_conversion('http://wa.me/351911545582');">
                     <div class="button-content">
                         <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                         <h3>Fale Agora pelo WhatsApp</h3>
@@ -104,7 +123,7 @@
                <!-- <div class="card">
                     <h3>Representação Fiscal</h3>
                     <h4>Se você ainda não tem morada fiscal em Portugal, oferecemos o serviço de representante fiscal para que você cumpra todas as obrigações fiscais exigidas. Sem um representante fiscal, você pode enfrentar restrições ao tentar fazer negócios ou regularizar sua situação no país.</h4>
-                    <a href="http://wa.me/351911545582">
+                    <a href="http://wa.me/351911545582" onclick="return gtag_report_conversion('http://wa.me/351911545582');">
                         <div class="button-content">
                             <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                             <h3>Preciso de um representante</h3>
@@ -114,7 +133,7 @@
                 <div class="card">
                     <h3>Alteração da Morada Fiscal</h3>
                     <h4>Precisa atualizar sua morada nos documentos oficiais? Cuidamos de todo o processo por você, garantindo que tudo seja feito de forma correta. Sem a alteração de morada, você pode ter problemas em receber correspondências importantes e até enfrentar complicações legais ao usar documentos com informações desatualizadas.</h4>
-                    <a href="http://wa.me/351911545582">
+                    <a href="http://wa.me/351911545582" onclick="return gtag_report_conversion('http://wa.me/351911545582');">
                         <div class="button-content morada">
                             <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                             <h3>Preciso alterar minha morada</h3>
@@ -124,7 +143,7 @@
                 <div class="card">
                     <h3>Obtenção do NIF (Número de Identificação Fiscal)</h3>
                     <h4>Facilitamos todo o processo para que você tenha o seu NIF em mãos de forma rápida e segura. O NIF é essencial para abrir conta bancária, assinar contratos de trabalho ou aluguel e realizar qualquer operação financeira em Portugal. Sem o NIF, você ficará impossibilitado de realizar essas ações básicas, dificultando sua adaptação no país.</h4>
-                    <a href="http://wa.me/351911545582">
+                    <a href="http://wa.me/351911545582" onclick="return gtag_report_conversion('http://wa.me/351911545582');">
                         <div class="button-content">
                             <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                             <h3>Quero o meu NIF agora!</h3>
@@ -134,7 +153,7 @@
                 <div class="card">
                     <h3>Obtenção do NISS (Número de Identificação da Segurança Social)</h3>
                     <h4>Cuidamos de toda a documentação necessária para que você possa contribuir para a segurança social e trabalhar legalmente em Portugal. Sem o NISS, você não poderá ser contratado formalmente, nem terá acesso aos benefícios sociais, como aposentadoria ou assistência médica do sistema público.</h4>
-                    <a href="http://wa.me/351911545582">
+                    <a href="http://wa.me/351911545582" onclick="return gtag_report_conversion('http://wa.me/351911545582');">
                         <div class="button-content">
                             <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                             <h3>Quero o meu NISS agora!</h3>
@@ -144,7 +163,7 @@
                 <div class="card">
                     <h3>Obtenção do Estatuto CPLP</h3>
                     <h4>Ajudamos brasileiros a regularizar sua situação com o benefício do Estatuto CPLP, que simplifica a sua permanência legal em Portugal. Sem o Estatuto CPLP, você pode enfrentar dificuldades para residir legalmente ou acessar serviços no país.</h4>
-                    <a href="http://wa.me/351911545582">
+                    <a href="http://wa.me/351911545582" onclick="return gtag_report_conversion('http://wa.me/351911545582');">
                         <div class="button-content">
                             <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                             <h3>Quero tirar minha CPLP</h3>
@@ -213,7 +232,7 @@
                 <h2>Você já sentiu na pele:</h2>
                 <h4>Sem documentos, não dá para trabalhar, alugar uma casa ou até abrir uma conta no banco. Cada dia que passa é uma oportunidade perdida. A vida em Portugal está esperando por você — resolva sua documentação hoje e comece a trabalhar e viver com tranquilidade.</h4>
             </div>
-            <a href="http://wa.me/351911545582">
+            <a href="http://wa.me/351911545582" onclick="return gtag_report_conversion('http://wa.me/351911545582');">
                 <div class="button-content">
                     <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                     <h3>Fale Agora pelo WhatsApp</h3>
