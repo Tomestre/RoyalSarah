@@ -41,8 +41,7 @@
         gtag("set", "url_passthrough", false);
     </script>
 
-    <!-- Event snippet for Clique de saída conversion page
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <!-- Event snippet for Clique de saída conversion page -->
     <script>
         function gtag_report_conversion(url) {
         var callback = function () {
@@ -138,8 +137,8 @@
             <button type="submit">Verificar</button>
         </form>
         <div id="errorMessage">Desculpe, não podemos ajudar com vistos de turista. Por favor, entre em contato quando tiver um visto de residência ou trabalho.</div>
-        <div id="whatsappButton">
-            <a href="http://wa.me/351911545582" id="whatsappLink" class="cta-button" onclick="return gtag_report_conversion('http://wa.me/351911545582');" >
+        <div id="whatsappButton" style="display: none;">
+            <a href="#" id="whatsappLink" class="cta-button">
                 <img src="./imgs/Vector-whatsapp.svg" alt="Ícone do WhatsApp">
                 <h3>Converse com um consultor agora</h3>
             </a>

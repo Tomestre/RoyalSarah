@@ -25,8 +25,19 @@ document.getElementById('qualificationForm').addEventListener('submit', function
         var encodedMessage = encodeURIComponent(message);
         var whatsappUrl = 'https://wa.me/351911545582?text=' + encodedMessage;
 
-        document.getElementById('whatsappLink').href = whatsappUrl;
+        // Exibe o botão
         document.getElementById('whatsappButton').style.display = 'block';
         document.getElementById('errorMessage').style.display = 'none';
+
+        // Remove listeners anteriores para evitar duplicação
+        var whatsappLink = document.getElementById('whatsappLink');
+        whatsappLink.removeEventListener('click', handleWhatsAppClick); // Remove listener antigo, se existir
+        whatsappLink.addEventListener('click', handleWhatsAppClick); // Adiciona novo listener
+
+        function handleWhatsAppClick(event) {
+            event.preventDefault();
+            gtag_report_conversion(whatsappUrl);
+            window.open(whatsappUrl, '_blank');
+        }
     }
 });
