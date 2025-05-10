@@ -23,7 +23,7 @@ document.getElementById('qualificationForm').addEventListener('submit', function
 
         var message = 'Olá, gostaria de agendar uma consulta gratuita. Tenho o visto de ' + visa + '. ' + docsString + '.';
         var encodedMessage = encodeURIComponent(message);
-        var whatsappUrl = 'http://wa.me/351911545582?text=' + encodedMessage;
+        var whatsappUrl = 'https://wa.me/351911545582?text=' + encodedMessage;
 
         document.getElementById('whatsappLink').href = whatsappUrl;
         document.getElementById('whatsappButton').style.display = 'block';
