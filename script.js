@@ -36,7 +36,6 @@ document.getElementById('qualificationForm').addEventListener('submit', function
 
         function handleWhatsAppClick(event) {
             event.preventDefault();
-            gtag_report_conversion(whatsappUrl);
             window.open(whatsappUrl, '_blank');
         }
     }
