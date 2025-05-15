@@ -20,6 +20,27 @@
     })(window,document,'script','dataLayer','GTM-N4RS4KW5');</script>
     <!-- End Google Tag Manager -->
 
+    
+    <!-- Event snippet for Clique de saída conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17003951623/0SkXCILV8rcaEIfsjqw_',
+            'value': 1.0,
+            'currency': 'EUR',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+
+
 </head>
 
 <script src="https://app.secureprivacy.ai/script/6820eb6fc10cd920875e92ec.js"></script>
