@@ -36,8 +36,9 @@ document.getElementById('qualificationForm').addEventListener('submit', function
 
         function handleWhatsAppClick(event) {
             event.preventDefault();
-            gtag_report_conversion(whatsappUrl);
+            
             window.open(whatsappUrl, '_blank');
+            gtag_report_conversion("https://wa.me/351911545582");
         }
     }
 });
